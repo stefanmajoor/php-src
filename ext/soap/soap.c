@@ -2085,7 +2085,6 @@ static void soap_server_fault(char* code, char* string, char *actor, zval* detai
 	set_soap_fault(&ret, NULL, code, string, actor, details, name);
 	/* TODO: Which function */
 	soap_server_fault_ex(NULL, &ret, NULL);
-	zend_bailout();
 }
 /* }}} */
 
